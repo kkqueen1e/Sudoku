@@ -29,7 +29,7 @@ public class Sudoku {
           int start = (int)(Math.random()*9) + 1;
           for (int s = 0; s < 9; s++) {
             int num = (start + i - 1) % 9 + 1;
-            if (isValid(board, i, j, num) {
+            if (isValid(board, i, j, num)) {
               board[i][j] = num;
               if (isFilled(board)) {
                 return true;
